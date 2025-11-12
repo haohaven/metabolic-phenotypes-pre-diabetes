@@ -86,10 +86,18 @@ bash
 *   [x]  **Step 1**: Repository setup and folder structure
 *   [x]  **Step 2**: Data loading module (`src/data/load.py`)
     *   Loads all 4 NHANES 2021-2023 XPT files
-    *   Validates presence of key variables (LBXGLU, LBDTRIG, BMXWAIST, demographics)
+    *   Validates presence of key variables
     *   Provides data summary and integrity checks
     *   Test: `python src/data/load.py`
-*   [ ]  Missing data exploration notebook
+*   [x]  Missing data exploration notebook (`notebooks/explore_data/missing_data_analysis.ipynb`)
+ - Comprehensive missingness analysis across all datasets
+  - Key findings:
+    - Total participants: 11,933
+    - Fasting subsample: 3,996 (all in glucose/triglycerides files)
+    - Complete core variables: ~3,996 adults (33.5% of total)
+  - Core variable completeness: LBXGLU, LBXTLG, BMXWAIST
+  - Note: All participants in lab files are pre-screened fasting subsample
+  - Outputs: 3 figures + summary table in `results/`
 *   [ ]  Data merging module
 *   [ ]  Fasting sample filtering
 *   [ ]  Missingness handling strategy
@@ -166,5 +174,5 @@ Academic research project. Data usage complies with NHANES public use data polic
 
 * * *
 
-**Last Updated**: 11 November 2025
-**Current Phase**: Data Infrastructure
+**Last Updated**: 12 November 2025
+**Current Phase**: Create preprocessing module and merge datasets
