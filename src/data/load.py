@@ -1,5 +1,5 @@
 """
-Data loading utilities for NHANES 2021-2023 metabolic phenotypes project.
+Data loading utilities for this project.
 
 This module provides functions to load and validate NHANES XPT files
 for the metabolic clustering analysis.

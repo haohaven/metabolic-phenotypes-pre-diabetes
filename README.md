@@ -180,5 +180,4 @@ Academic research project. Data usage complies with NHANES public use data polic
 
 * * *
 
-**Last Updated**: 11 November 2025
-**Current Phase**: Create preprocessing module and merge datasets
+**Last Updated**: 12 November 2025

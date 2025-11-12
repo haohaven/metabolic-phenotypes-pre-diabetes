@@ -324,3 +324,4 @@ if __name__ == "__main__":
     print("\n Preprocessing pipeline completed successfully!") #pleaseeeee work
     print(f"  Access processed data at: data/processed/nhanes_metabolic_analysis_ready.csv")
     print(f"  View report at: results/tables/preprocessing_report.txt")
+
