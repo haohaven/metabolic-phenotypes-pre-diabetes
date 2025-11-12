@@ -1,0 +1,7 @@
+Variable,N,Mean (SD),Median [IQR],Range
+Glucose,3047,109.0 (33.3),101.0 [94.0-110.0],59.0-561.0
+Triglycerides,3047,120.0 (87.5),99.0 [73.0-141.0],25.0-1745.0
+Waist Circ.,3047,100.4 (16.8),99.0 [88.3-110.5],60.0-177.2
+Glucose Status,3047,—,—,"Normal: 1370 (45.0%), Prediabetes: 1300 (42.7%), Diabetes: 376 (12.3%)"
+Triglycerides Status,3047,—,—,"Normal: 2376 (78.0%), Borderline: 346 (11.4%), High: 305 (10.0%), Very High: 20 (0.7%)"
+Waist Risk,3047,—,—,"High Risk: 1817 (59.6%), Normal: 1230 (40.4%)"
