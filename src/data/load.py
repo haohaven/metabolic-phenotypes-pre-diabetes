@@ -1,5 +1,5 @@
 """
-Data loading utilities for NHANES 2021-2023 metabolic phenotypes project.
+Data loading utilities for this project.
 
 This module provides functions to load and validate NHANES XPT files
 for the metabolic clustering analysis.
@@ -73,29 +73,32 @@ def get_key_variables() -> Dict[str, list]:
     
     return {
         "glucose": [
-            "SEQN",      #Respondent sequence number (uniue id)
-            "LBXGLU",    # fasting glucose (mg/dL)
-            "PHAFSTHR",  # fasting time in hours
-            "WTSAFPRP"   # fasting subsample weight
+            "SEQN",      # Respondent ID
+            "LBXGLU",    # Fasting glucose (mg/dL)
+            "LBDGLUSI",  # Fasting glucose (mmol/L)
+            "WTSAF2YR"   # Fasting sample 2-year weight
         ],
         "triglycerides": [
-            "SEQN",      
-            "LBDTRIG",   # triglycerides (mg/dL)
-            "WTSAFPRP"  
+            "SEQN",      # Respondent ID
+            "LBXTLG",    # Triglycerides (mg/dL) 
+            "LBDTRSI",   # Triglycerides (mmol/L)
+            "WTSAF2YR"   # Fasting sample 2-year weight
         ],
         "body_measures": [
-            "SEQN",      
-            "BMXWAIST",  # waist circumference (cm)
-            "BMXBMI",    # body mass index
-            "BMXWT",     # weight (kg)
-            "BMXHT"      # height (cm)
+            "SEQN",      # Respondent ID
+            "BMXWAIST",  # Waist circumference (cm)
+            "BMXBMI",    # Body mass index
+            "BMXWT",     # Weight (kg)
+            "BMXHT"      # Height (cm)
         ],
         "demographics": [
-            "SEQN",     
-            "RIDAGEYR",  # age (years)
-            "RIAGENDR",  # gender
-            "RIDRETH3",  # race or ethnicity
-            "DMDEDUC2"   # education level
+            "SEQN",      # Respondent ID
+            "RIDAGEYR",  # Age (years)
+            "RIAGENDR",  # Gender
+            "RIDRETH3",  # Race/ethnicity
+            "DMDEDUC2",  # Education level
+            "WTINT2YR",  # Interview weight
+            "WTMEC2YR"   # Examination weight
         ]
     }
 
