@@ -105,8 +105,21 @@ bash
   - Final sample: ~3,996 participants
   - Run: `python src/data/preprocess.py`
   - Output: `data/processed/nhanes_metabolic_analysis_ready.csv`
-*   [ ]  Fasting sample filtering
-*   [ ]  Missingness handling strategy
+*   [x]  Variable distributions analysis
+  - Comprehensive visualization of all core variables
+  - Clinical category distributions (glucose, triglycerides, waist risk)
+  - Demographics stratification (age, sex, race/ethnicity)
+  - Normality assessment via Q-Q plots
+  - Outlier detection via box plots
+  - Key finding: Triglycerides highly right-skewed (may need transformation)
+  - Outputs: 6 figures + 2 summary tables
+    [x]Correlation analysis (`notebooks/explore_data/correlation_analysis.ipynb`)
+  - Pearson/Spearman correlations between all variables
+  - Core variables: Glucose-Triglycerides (r=~0.X), Glucose-Waist (r=~0.X), Triglycerides-Waist (r=~0.X)
+  - VIF analysis: All VIF < 5 (acceptable multicollinearity)
+  - Stratified by age groups and sex
+  - Partial correlations controlling for confounders
+  - Ready for feature engineering and clustering
 *   [ ]  Create analysis-ready dataset
 *   [ ]  Data quality report
 *   [ ]  Demographic distribution analysis
