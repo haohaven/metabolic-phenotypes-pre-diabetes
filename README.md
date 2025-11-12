@@ -127,9 +127,16 @@ bash
   - Decision: Retain all data (outliers may be genuine subtypes)
   - Strategy: Use robust scaling to minimize outlier influence
   - Outlier flags saved for optional sensitivity analysis
-*   [ ]  Feature scaling and standardization
-*   [ ]  Demographic distribution analysis
-*   [ ]  Variable distribution plots
+    [x] : Feature scaling and standardization (`notebooks/explore_data/feature_scaling.ipynb`)
+  - Compared 4 scaling methods: StandardScaler, MinMaxScaler, RobustScaler, PowerTransformer
+  - Evaluated impact on distributions, correlations, and Euclidean distances
+  - **Selected RobustScaler**: Robust to outliers, appropriate for skewed data
+  - Applied to all 3048 participants
+  - Created scaled dataset: `data/processed/nhanes_metabolic_scaled.csv`
+  - Saved scaler object for reproducibility
+  - Variables ready: LBXGLU_scaled, LBXTLG_scaled, BMXWAIST_scaled
+*   [ ]  PCA and dimensionality assessment
+*   [ ]  Final data quality validation
 
 ###  Phase 2: Exploratory Analysis 
 
