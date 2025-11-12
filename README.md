@@ -1,6 +1,6 @@
 # Uncovering Hidden Metabolic Phenotypes in Adults Using Clustering of Glucose, Lipids, and Adiposity
 
-This project explores whether hidden subtypes of metabolic risk exist within the general population — beyond traditional diagnostic labels like "prediabetes." Using large scale public health data (NHANES 2021–2023), I apply unsupervised learning to identify groups of individuals with distinct metabolic signatures, each potentially suggesting different intervention priorities (such as focusing on lipid management versus weight loss strategies).
+This project explores whether hidden subtypes of metabolic risk exist within the general population; beyond traditional diagnostic labels like "prediabetes." Using large scale public health data (NHANES 2021–2023), I apply unsupervised learning to identify groups of individuals with distinct metabolic signatures, each potentially suggesting different intervention priorities (such as focusing on lipid management versus weight loss strategies).
 
 ## Project Motivation
 
@@ -83,8 +83,8 @@ bash
 
 ###  Phase 1: Data Infrastructure
 
-*   [x]  **Step 1**: Repository setup and folder structure
-*   [x]  **Step 2**: Data loading module (`src/data/load.py`)
+*   [x]  Repository setup and folder structure
+*   [x] Data loading module (`src/data/load.py`)
     *   Loads all 4 NHANES 2021-2023 XPT files
     *   Validates presence of key variables
     *   Provides data summary and integrity checks
@@ -98,7 +98,13 @@ bash
   - Core variable completeness: LBXGLU, LBXTLG, BMXWAIST
   - Note: All participants in lab files are pre-screened fasting subsample
   - Outputs: 3 figures + summary table in `results/`
-*   [ ]  Data merging module
+*   [x]  Data preprocessing module (`src/data/preprocess.py`)
+  - Merges all 4 NHANES datasets on SEQN
+  - Filters to adults ≥18 with complete core variables
+  - Creates 6 derived variables (age groups, clinical categories)
+  - Final sample: ~3,996 participants
+  - Run: `python src/data/preprocess.py`
+  - Output: `data/processed/nhanes_metabolic_analysis_ready.csv`
 *   [ ]  Fasting sample filtering
 *   [ ]  Missingness handling strategy
 *   [ ]  Create analysis-ready dataset
