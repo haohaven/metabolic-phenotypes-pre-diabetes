@@ -1,0 +1,60 @@
+NHANES metabolic phenotypes preprocessing report 
+
+sample size summary
+Starting sample (all demographics):   11,933
+Excluded - Age <18:                     3,780
+Excluded - Missing core variables:      5,106
+Final analysis sample:                  3,047
+Retention rate:                         25.5%
+
+Variables in final dataset
+Total variables: 42
+
+Core clustering variables:
+  • LBXGLU
+  • LBXTLG
+  • BMXWAIST
+
+Demographic variables:
+  • RIDAGEYR
+  • RIAGENDR
+  • RIDRETH3
+  • DMDEDUC2
+
+Derived variables:
+  • age_group
+  • sex_label
+  • bmi_category
+  • glucose_category
+  • triglycerides_category
+  • waist_risk
+
+descriptive statistics: core variable
+            LBXGLU       LBXTLG     BMXWAIST     RIDAGEYR
+count  3047.000000  3047.000000  3047.000000  3047.000000
+mean    108.968822   120.048901   100.410863    53.028224
+std      33.285036    87.542410    16.796049    17.836177
+min      59.000000    25.000000    60.000000    18.000000
+25%      94.000000    73.000000    88.300000    38.000000
+50%     101.000000    99.000000    99.000000    57.000000
+75%     110.000000   141.000000   110.500000    68.000000
+max     561.000000  1745.000000   177.200000    80.000000
+
+Clinical category distribution
+
+Glucose Status:
+  Normal         : 1,370 ( 45.0%)
+  Prediabetes    : 1,300 ( 42.7%)
+  Diabetes       :   376 ( 12.3%)
+
+Triglycerides Status:
+  Normal         : 2,376 ( 78.0%)
+  Borderline     :   346 ( 11.4%)
+  High           :   305 ( 10.0%)
+  Very High      :    20 (  0.7%)
+
+Waist Circumference Risk:
+  High Risk      : 1,817 ( 59.6%)
+  Normal         : 1,230 ( 40.4%)
+
+Report generated: 2025-11-12 07:59:35
