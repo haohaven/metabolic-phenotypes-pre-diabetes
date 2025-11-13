@@ -34,3 +34,20 @@
 4. Confirm that all 3 variables contribute unique information
 
 **Note:** PCA is NOT used for dimensionality reduction here - all 3 variables are kept for clustering.
+
+## Loading Plot Interpretation Methodology
+**Approach:** Standardized interpretation of PCA loading plots
+
+**Interpretation Rules:**
+- **Arrow length:** Strength of contribution to PC1-PC2 space
+- **Arrow direction:** Correlation between variables
+  - Same direction = positively correlated
+  - Opposite direction = negatively correlated  
+  - 90° angle = uncorrelated
+- **Arrows close to unit circle:** Well-represented in PC1-PC2 space
+- **Short arrows:** Poorly represented (variance primarily in PC3)
+
+**Reasoning:**
+- Provides consistent framework for analyzing variable relationships
+- Helps identify which variables drive each principal component
+- Allows assessment of how well 2D visualization represents 3D data structure
