@@ -54,7 +54,3 @@ Ultimately, this work is about **letting the data guide the story**. By moving b
 ·       Could these insights inform targeted screening or intervention strategies?
 
 By framing the analysis with these questions, the goal is to move beyond simple measurements and thresholds, and instead **let the data reveal the natural structure of metabolic risk**. Each cluster not only tells a story about physiology but also points toward actionable insights for clinicians, researchers, and public health practitioners.
-
-
-
-
